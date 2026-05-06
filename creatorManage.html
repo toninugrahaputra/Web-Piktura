@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>    
-    <title>Creator Management</title>
+    <title>Creator Management - Rakryan Piktura</title>
 </head>
-<body>
+<body class="bg-gray-50/30">
     <header class="fixed top-0 w-full z-50 px-4 md:px-6">
         <nav id="main-nav" class="max-w-6xl mx-auto bg-transparent backdrop-blur-none border border-transparent py-3 px-4 md:px-6 rounded-2xl transition-all duration-300 mt-4 md:mt-6 flex items-center justify-between">
             <div class="flex items-center">
@@ -29,7 +29,6 @@
                         Konsultasi
                     </button>
                 </a>
-
                 <button id="burger-btn" class="md:hidden text-gray-600 text-xl p-1 focus:outline-none">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -37,14 +36,12 @@
         </nav>
 
         <div id="mobile-menu" class="hidden fixed inset-x-4 top-24 bg-white border border-gray-100 p-6 rounded-2xl shadow-xl flex-col space-y-4 md:hidden z-50 transition-all duration-500 ease-in-out transform origin-top scale-y-0 opacity-0">
-            
             <div class="flex flex-col space-y-4 text-center font-medium text-gray-600">
                 <a href="index.html" class="py-2 border-b border-gray-50 hover:text-orange-500 transition">Beranda</a>
                 <a href="socialMedia.html?showPopup=true" class="hover:text-orange-500 transition">Audit Akun Gratis</a>
                 <a href="creatorManage.html" class="py-2 border-b border-gray-50 hover:text-orange-500 transition">Brand Management</a>
                 <a href="pikturaSchool.html" class="py-2 border-b border-gray-50 hover:text-orange-500 transition">Piktura School</a>                    
             </div>
-
             <a href="https://wa.me/6282234041064" target="_blank" class="block w-full pt-2">
                 <button class="bg-gradient-to-r from-orange-400 to-yellow-500 text-white w-full py-4 rounded-xl font-bold shadow-md active:scale-95 transition">
                     Konsultasi
@@ -53,206 +50,244 @@
         </div>
     </header>
 
-    <section id="creator" class="pt-16 md:pt-20 pb-0 bg-white relative overflow-hidden">
-        <div class="max-w-6xl mx-auto pt-14 px-6 ">
-            <div class="text-center mb-12 md:mb-20">
-                <span class="inline-block bg-orange-100 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest mb-4">• Creator Management</span>
-                <h4 class="text-3xl md:text-4xl font-medium text-[#434343] mb-4">Jembatan Antara Brand & Talent</h4>
-                <p class="text-gray-500 text-xs md:text-base max-w-xl mx-auto leading-relaxed">Kami kelola 10+ creator profesional dari berbagai niche, brand mendapat hasil maksimal, creator fokus berkarya</p>
-            </div>
+    <section class="pt-32 pb-16 md:pt-40 md:pb-24 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-100/50 via-white to-white pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-block bg-orange-100 text-[10px] md:text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest mb-6 border border-orange-200">
+                🚀 Creator Management
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-[#434343] leading-[1.1] mb-6 tracking-tight">
+                Dari Kreator Biasa, Jadi <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-400">Aset Digital</span> yang Dicari.
+            </h1>
+            <p class="text-gray-500 text-base md:text-xl max-w-2xl mx-auto leading-relaxed mb-10 font-medium">
+                Kami melihat potensi Anda. Kami membangun jalur sukses Anda.
+            </p>
+            <a href="#daftar" class="inline-block bg-gradient-to-r from-orange-500 to-yellow-400 text-white px-8 py-4 rounded-2xl font-black text-sm md:text-base shadow-[0_15px_30px_rgba(249,115,22,0.3)] hover:shadow-[0_20px_40px_rgba(249,115,22,0.4)] hover:-translate-y-1 transition-all duration-300">
+                Mulai Karir Kreator Saya
+            </a>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+    <section class="py-12 md:py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-[#434343] rounded-[2rem] md:rounded-[3rem] p-8 md:p-14 text-center md:text-left flex flex-col md:flex-row items-center gap-10 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
                 
-                <div class="group relative flex flex-col p-6 md:p-8 rounded-[2.5rem] md:rounded-[3rem] bg-white border border-gray-100 shadow-sm transition-all duration-500 overflow-hidden hover:border-orange-100 hover:shadow-[0_20px_50px_rgba(249,115,22,0.2)]">
-                    <div class="absolute top-6 right-6 opacity-10 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
-                        <svg class="w-12 h-12 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />
-                        </svg>
-                    </div>
-
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 md:w-16 md:h-16 bg-orange-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-100">
-                            <img src="images/Icon_Building.png" class="w-8 md:w-auto" alt="">
-                        </div>
-                        <div class="flex justify-between">
-                            <h3 class="text-xl md:text-2xl font-medium text-[#434343] group-hover:text-orange-500 transition-colors duration-300 mb-4">Untuk Brand</h3>
-                            <span class="text-xs text-gray-400 mt-1 font-medium italic">Professional Partner</span>
-                        </div>
-                        <ul class="text-gray-500 text-xs md:text-sm leading-relaxed space-y-4 mb-8">
-                            <li class="flex items-start gap-3">
-                                <div class="mt-1 bg-orange-200 rounded-full p-1 shrink-0"><svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Akses ke talent terverivikasi & profesional</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="mt-1 bg-orange-200 rounded-full p-1 shrink-0"><svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Matching talent sesuai target audience</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="mt-1 bg-orange-200 rounded-full p-1 shrink-0"><svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Campaign management end-to-end</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="mt-1 bg-orange-200 rounded-full p-1 shrink-0"><svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Performance tracking & reporting</span>
-                            </li>
-                        </ul>
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-orange-400 to-yellow-400 rounded-[2rem] rotate-12 flex items-center justify-center shadow-xl">
+                        <i class="fas fa-bolt text-4xl md:text-5xl text-white -rotate-12"></i>
                     </div>
                 </div>
-
-                <div class="group relative flex flex-col p-6 md:p-8 rounded-[2.5rem] md:rounded-[3rem] bg-white border border-gray-100 shadow-sm transition-all duration-500 overflow-hidden hover:border-orange-100 hover:shadow-[0_20px_50px_rgba(249,115,22,0.2)]">
-                    <div class="absolute top-6 right-6 opacity-10 group-hover:opacity-100 group-hover:rotate-12 transition-all duration-500">
-                        <svg class="w-12 h-12 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19,9L17.7,6.3L15,5L17.7,3.7L19,1L20.3,3.7L23,5L20.3,6.3L19,9M9,17L7,12L2,10L7,8L9,3L11,8L16,10L11,12L9,17M16,22L14.7,19.3L12,18L14.7,16.7L16,14L17.3,16.7L20,18L17.3,19.3L16,22Z" />
-                        </svg>
-                    </div>
-
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 md:w-16 md:h-16 bg-orange-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-100">
-                            <img src="images/Icon_Users.png" class="w-8 md:w-auto" alt="">
-                        </div>
-                        <div class="flex justify-between">
-                            <h3 class="text-xl md:text-2xl font-medium text-[#434343] group-hover:text-orange-500 transition-colors duration-300 mb-4">Untuk Creator</h3>
-                            <span class="text-xs text-gray-400 mt-1 font-medium italic">Creative Growth</span>
-                        </div>
-                        <ul class="text-gray-500 text-xs md:text-sm leading-relaxed space-y-4 mb-8">
-                            <li class="flex items-start gap-3">
-                                <div class="mt-1 bg-orange-200 rounded-full p-1 shrink-0"><svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Dapat project dari brand-brand besar</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="mt-1 bg-orange-200 rounded-full p-1 shrink-0"><svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Negosiasi & legal support</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="mt-1 bg-orange-200 rounded-full p-1 shrink-0"><svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Content guidance & optimization</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="mt-1 bg-orange-200 rounded-full p-1 shrink-0"><svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Payment management yang aman</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="md:w-2/3 relative z-10">
+                    <h2 class="text-2xl md:text-3xl font-black text-white mb-4">Apa Itu Creator Management?</h2>
+                    <p class="text-gray-300 text-sm md:text-base leading-relaxed font-medium">
+                        Sederhananya, kami adalah <span class="text-white font-bold">manajer pribadi</span> untuk karir digital Anda. Di Rakryan Piktura, kami membantu kreator menemukan karakter unik, merapikan kualitas konten, hingga menjembatani Anda dengan brand. Kami mengurus urusan bisnis dan strategi, agar Anda bisa fokus sepenuhnya untuk jadi versi kreatif terbaik Anda.
+                    </p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="py-10 md:py-16 bg-gray-50/50"> <div class="max-w-6xl mx-auto px-6">
-    
-            <div class="text-center mb-10 md:mb-12 animate-fade-up">
-                <h2 class="text-2xl md:text-4xl font-medium text-[#434343] tracking-tight">
-                    <span class="text-orange-500">10+</span> Talent Siap Berkontribusi
-                </h2>
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-[#434343] mb-4">Kenapa Gabung Kami?</h2>
+                <p class="text-gray-500 font-medium">Bukan sekadar agensi, ini adalah tempatmu bertumbuh.</p>
             </div>
 
-            <div class="flex flex-wrap justify-center lg:grid lg:grid-cols-4 gap-4 md:gap-6 mb-12">
-                
-                <a href="https://www.tiktok.com/@uul786?_r=1&_t=ZS-95u6NaJrrtZ" target="_blank" rel="noopener noreferrer" 
-                    class="block w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-full animate-fade-up delay-1 group relative bg-white rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500">
-                        
-                        <div class="aspect-[3/4] bg-gray-200 overflow-hidden relative">
-                            <span class="absolute top-3 right-3 md:top-5 md:right-5 z-20 bg-orange-400 backdrop-blur-md text-white text-[7px] md:text-[10px] font-black px-3 py-1 rounded-full shadow-sm uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Host Live
-                            </span>
-                            <img src="images/Talent1.png" alt="Talent 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        
-                        <div class="p-4 md:p-6">
-                            <p class="text-orange-500 text-[10px] md:text-[13px] font-black mb-1">@uul786</p>
-                            <h4 class="text-sm md:text-lg font-black text-[#434343] group-hover:text-orange-500 transition-colors">Ulumiah Uul</h4>
-                            
-                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-t border-gray-50 pt-3 md:pt-4 gap-2">
-                                <div class="flex gap-0.5 text-yellow-400 items-center">
-                                    <svg class="w-2.5 h-2.5 md:w-3 md:h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                                    <span class="text-[10px] font-bold text-gray-700 ml-1">4.9</span>
-                                </div>
-                                <span class="text-[8px] md:text-[10px] font-black text-gray-400 uppercase tracking-tighter bg-gray-50 px-2 py-0.5 rounded">Trusted Reviewer</span>
-                            </div>
-                        </div>
-                </a>
-                
-                <a href="https://www.tiktok.com/@nadiaangelinaaa_?_r=1&_t=ZS-95u6Oc3gKRN" target="_blank" rel="noopener noreferrer" 
-                    class="block w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-full animate-fade-up delay-1 group relative bg-white rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500">
-                        
-                        <div class="aspect-[3/4] bg-gray-200 overflow-hidden relative">
-                            <span class="absolute top-3 right-3 md:top-5 md:right-5 z-20 bg-orange-400 backdrop-blur-md text-white text-[7px] md:text-[10px] font-black px-3 py-1 rounded-full shadow-sm uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Content Creator
-                            </span>
-                            <img src="images/Talent2.png" alt="Talent 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        
-                        <div class="p-4 md:p-6">
-                            <p class="text-orange-500 text-[10px] md:text-[13px] font-black mb-1">@nadiaangelinaaa</p>
-                            <h4 class="text-sm md:text-lg font-black text-[#434343] group-hover:text-orange-500 transition-colors">Nadia Angelina</h4>
-                            
-                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-t border-gray-50 pt-3 md:pt-4 gap-2">
-                                <div class="flex gap-0.5 text-yellow-400 items-center">
-                                    <svg class="w-2.5 h-2.5 md:w-3 md:h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                                    <span class="text-[10px] font-bold text-gray-700 ml-1">4.9</span>
-                                </div>
-                                <span class="text-[8px] md:text-[10px] font-black text-gray-400 uppercase tracking-tighter bg-gray-50 px-2 py-0.5 rounded">Vibrant Personality</span>
-                            </div>
-                        </div>
-                </a>
-                
-                <a href="https://www.tiktok.com/@audyemz?_r=1&_t=ZS-95u6MbkoAyn" target="_blank" rel="noopener noreferrer" 
-                    class="block w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-full animate-fade-up delay-1 group relative bg-white rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500">
-                        
-                        <div class="aspect-[3/4] bg-gray-200 overflow-hidden relative">
-                            <span class="absolute top-3 right-3 md:top-5 md:right-5 z-20 bg-orange-400 backdrop-blur-md text-white text-[7px] md:text-[10px] font-black px-3 py-1 rounded-full shadow-sm uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Content Creator
-                            </span>
-                            <img src="images/Talent3.png" alt="Talent 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        
-                        <div class="p-4 md:p-6">
-                            <p class="text-orange-500 text-[10px] md:text-[13px] font-black mb-1">@audyemz</p>
-                            <h4 class="text-sm md:text-lg font-black text-[#434343] group-hover:text-orange-500 transition-colors">Yemini</h4>
-                            
-                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-t border-gray-50 pt-3 md:pt-4 gap-2">
-                                <div class="flex gap-0.5 text-yellow-400 items-center">
-                                    <svg class="w-2.5 h-2.5 md:w-3 md:h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                                    <span class="text-[10px] font-bold text-gray-700 ml-1">4.9</span>
-                                </div>
-                                <span class="text-[8px] md:text-[10px] font-black text-gray-400 uppercase tracking-tighter bg-gray-50 px-2 py-0.5 rounded">Commercial Look</span>
-                            </div>
-                        </div>
-                </a>
-                
-                <a href="https://www.tiktok.com/@keyzavexia?_r=1&_t=ZS-95u6P1XsM8v" target="_blank" rel="noopener noreferrer" 
-                    class="block w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-full animate-fade-up delay-1 group relative bg-white rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500">
-                        
-                        <div class="aspect-[3/4] bg-gray-200 overflow-hidden relative">
-                            <span class="absolute top-3 right-3 md:top-5 md:right-5 z-20 bg-orange-400 backdrop-blur-md text-white text-[7px] md:text-[10px] font-black px-3 py-1 rounded-full shadow-sm uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Content Creator
-                            </span>
-                            <img src="images/Talent4.png" alt="Talent 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
-                        </div>
-                        
-                        <div class="p-4 md:p-6">
-                            <p class="text-orange-500 text-[10px] md:text-[13px] font-black mb-1">@keyzavexia</p>
-                            <h4 class="text-sm md:text-lg font-black text-[#434343] group-hover:text-orange-500 transition-colors">Keyza Vexia</h4>
-                            
-                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-t border-gray-50 pt-3 md:pt-4 gap-2">
-                                <div class="flex gap-0.5 text-yellow-400 items-center">
-                                    <svg class="w-2.5 h-2.5 md:w-3 md:h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                                    <span class="text-[10px] font-bold text-gray-700 ml-1">4.9</span>
-                                </div>
-                                <span class="text-[8px] md:text-[10px] font-black text-gray-400 uppercase tracking-tighter bg-gray-50 px-2 py-0.5 rounded">Street-Modest Style</span>
-                            </div>
-                        </div>
-                </a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-8 rounded-[2rem] bg-gray-50 border border-gray-100 hover:border-orange-200 transition-all group">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-orange-500 text-xl group-hover:scale-110 transition-transform"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3 class="text-lg font-black text-[#434343] mb-3">Mentor Praktisi</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Dibimbing langsung oleh tim yang paham cara kerja algoritma dari nol.</p>
+                </div>
+                <div class="p-8 rounded-[2rem] bg-gray-50 border border-gray-100 hover:border-orange-200 transition-all group">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-orange-500 text-xl group-hover:scale-110 transition-transform"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-lg font-black text-[#434343] mb-3">Bukan Sekadar Angka</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Kami tidak peduli seberapa kecil followers Anda sekarang, kami fokus pada kualitas konten Anda ke depan.</p>
+                </div>
+                <div class="p-8 rounded-[2rem] bg-gray-50 border border-gray-100 hover:border-orange-200 transition-all group">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-orange-500 text-xl group-hover:scale-110 transition-transform"><i class="fas fa-video"></i></div>
+                    <h3 class="text-lg font-black text-[#434343] mb-3">Akses Alat & Tim</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Dukungan riset tren untuk menciptakan UGC Content yang high-converting dan profesional.</p>
+                </div>
+                <div class="p-8 rounded-[2rem] bg-gray-50 border border-gray-100 hover:border-orange-200 transition-all group lg:col-span-1 md:col-span-2 lg:col-start-auto md:col-start-1">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-orange-500 text-xl group-hover:scale-110 transition-transform"><i class="fas fa-id-badge"></i></div>
+                    <h3 class="text-lg font-black text-[#434343] mb-3">Personal Branding</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Kami bantu menemukan "Niche" atau ciri khas yang bikin Anda sulit dilupakan audiens.</p>
+                </div>
+                <div class="p-8 rounded-[2rem] bg-gray-50 border border-gray-100 hover:border-orange-200 transition-all group lg:col-span-2 md:col-span-2">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-orange-500 text-xl group-hover:scale-110 transition-transform"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="text-lg font-black text-[#434343] mb-3">Kelas Gratis</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Diundang untuk menghadiri kelas pengembangan karakter dan kreatif serta kelas influencer untuk pengembangan keterampilan secara jangka panjang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="py-16 md:py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-gradient-to-br from-orange-50 to-orange-100/30 rounded-[3rem] p-8 md:p-16 border border-orange-100">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-black text-[#434343] mb-4">Menuju Kreator High-Performance</h2>
+                    <p class="text-gray-600 font-medium max-w-xl mx-auto">Kami membentuk Anda menjadi kreator yang punya standar tinggi untuk bersaing di industri kreatif.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-3xl shadow-sm">
+                        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mb-4 text-orange-500 font-black">1</div>
+                        <h4 class="font-black text-[#434343] mb-2">High Hook Mastery</h4>
+                        <p class="text-gray-500 text-sm">Jago bikin audiens berhenti scrolling di 3 detik pertama.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm">
+                        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mb-4 text-orange-500 font-black">2</div>
+                        <h4 class="font-black text-[#434343] mb-2">Authentic Influence</h4>
+                        <p class="text-gray-500 text-sm">Membangun pengikut yang loyal, bukan sekadar bot atau angka mati.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm">
+                        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mb-4 text-orange-500 font-black">3</div>
+                        <h4 class="font-black text-[#434343] mb-2">Professional Attitude</h4>
+                        <p class="text-gray-500 text-sm">Membentuk mentalitas profesional agar siap bekerja sama dengan brand besar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-[#434343] mb-4">Alur Menjadi Kreator Kami</h2>
+            </div>
+            
+            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between relative">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-100 -translate-y-1/2 z-0"></div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center bg-white md:bg-transparent p-4 rounded-2xl md:w-1/5">
+                    <div class="w-12 h-12 bg-[#434343] text-white rounded-full flex items-center justify-center font-black text-xl mb-4 shadow-lg">1</div>
+                    <h4 class="font-bold text-[#434343] mb-1">Daftar</h4>
+                    <p class="text-[11px] text-gray-500">Isi Form & lengkapi profil sosmed Anda.</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center text-center bg-white md:bg-transparent p-4 rounded-2xl md:w-1/5">
+                    <div class="w-12 h-12 bg-white border-2 border-gray-200 text-gray-400 rounded-full flex items-center justify-center font-black text-xl mb-4">2</div>
+                    <h4 class="font-bold text-[#434343] mb-1">Audit</h4>
+                    <p class="text-[11px] text-gray-500">Tim kami membedah potensi & celah konten.</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center text-center bg-white md:bg-transparent p-4 rounded-2xl md:w-1/5">
+                    <div class="w-12 h-12 bg-white border-2 border-gray-200 text-gray-400 rounded-full flex items-center justify-center font-black text-xl mb-4">3</div>
+                    <h4 class="font-bold text-[#434343] mb-1">Discovery</h4>
+                    <p class="text-[11px] text-gray-500">Ngobrol santai visi & tujuan karir Anda.</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center text-center bg-white md:bg-transparent p-4 rounded-2xl md:w-1/5">
+                    <div class="w-12 h-12 bg-white border-2 border-gray-200 text-gray-400 rounded-full flex items-center justify-center font-black text-xl mb-4">4</div>
+                    <h4 class="font-bold text-[#434343] mb-1">Inkubasi</h4>
+                    <p class="text-[11px] text-gray-500">Bimbingan strategi, produksi & brand.</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center text-center bg-white md:bg-transparent p-4 rounded-2xl md:w-1/5">
+                    <div class="w-12 h-12 bg-gradient-to-r from-orange-400 to-yellow-400 text-white rounded-full flex items-center justify-center font-black text-xl mb-4 shadow-[0_10px_20px_rgba(249,115,22,0.3)]">5</div>
+                    <h4 class="font-bold text-[#434343] mb-1">Launch</h4>
+                    <p class="text-[11px] text-gray-500">Mulai dominasi feed & tarik brand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-[#434343] mb-4">Mereka yang Berani Mulai</h2>
+                <p class="text-gray-500 font-medium">Bukan sekadar wajah, tapi kreator dengan tujuan jelas.</p>
             </div>
 
-            <div class="text-center animate-fade-up delay-5">
-                <a href="talent.html" class="inline-flex items-center gap-3 text-[#434343] font-black text-xs md:text-sm group px-8 py-4 border border-gray-200 rounded-2xl hover:bg-[#434343] hover:text-white transition-all duration-300 shadow-sm hover:shadow-lg">
-                    Lihat Talent Lainnya
-                    <svg class="w-4 h-4 text-orange-500 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path>
-                    </svg>
+            <div class="flex flex-wrap justify-center lg:grid lg:grid-cols-4 gap-4 md:gap-6">
+                <div class="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-full group bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-2 transition-all duration-300 relative">
+                    <div class="aspect-[3/4] bg-gray-200 overflow-hidden relative">
+                        <img src="images/Talent1_1.png" alt="Ulumiah" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="inline-block bg-orange-500 text-white text-[8px] md:text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider mb-2">Trusted Reviewer</span>
+                            <h4 class="text-white font-black text-base md:text-lg leading-tight">Ulumiah Uul</h4>
+                        </div>
+                    </div>
+                    <div class="p-4 md:p-5">
+                        <p class="text-gray-500 text-[10px] md:text-xs leading-relaxed italic">"Tujuan: Menjadi jembatan kepercayaan antara brand dan audiens melalui ulasan yang jujur, mendalam, dan solutif untuk membantu orang membuat keputusan belanja yang tepat."</p>
+                    </div>
+                </div>
+
+                <div class="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-full group bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-2 transition-all duration-300 relative">
+                    <div class="aspect-[3/4] bg-gray-200 overflow-hidden relative">
+                        <img src="images/Talent2_1.png" alt="Nadia Angelina" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="inline-block bg-orange-500 text-white text-[8px] md:text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider mb-2">Vibrant Personality</span>
+                            <h4 class="text-white font-black text-base md:text-lg leading-tight">Nadia Angelina</h4>
+                        </div>
+                    </div>
+                    <div class="p-4 md:p-5">
+                        <p class="text-gray-500 text-[10px] md:text-xs leading-relaxed italic">"Tujuan: Menyebarkan energi positif dan keceriaan lewat konten kreatif yang menghibur, sekaligus membangun komunitas digital yang suportif dan penuh semangat setiap harinya."</p>
+                    </div>
+                </div>
+
+                <div class="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-full group bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-2 transition-all duration-300 relative">
+                    <div class="aspect-[3/4] bg-gray-200 overflow-hidden relative">
+                        <img src="images/Talent3_1.png" alt="Yemini" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="inline-block bg-orange-500 text-white text-[8px] md:text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider mb-2">Commercial Look</span>
+                            <h4 class="text-white font-black text-base md:text-lg leading-tight">Yemini</h4>
+                        </div>
+                    </div>
+                    <div class="p-4 md:p-5">
+                        <p class="text-gray-500 text-[10px] md:text-xs leading-relaxed italic">"Tujuan: Mempresentasikan nilai estetika profesional sebuah brand ke dalam visual yang ikonik, guna meningkatkan daya tarik produk di pasar digital secara elegan dan efektif.."</p>
+                    </div>
+                </div>
+
+                <div class="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] lg:w-full group bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:-translate-y-2 transition-all duration-300 relative">
+                    <div class="aspect-[3/4] bg-gray-200 overflow-hidden relative">
+                        <img src="images/Talent4_1.png" alt="Keyza Vexia" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="inline-block bg-orange-500 text-white text-[8px] md:text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider mb-2">Street Modest Style</span>
+                            <h4 class="text-white font-black text-base md:text-lg leading-tight">Keyza Vexia</h4>
+                        </div>
+                    </div>
+                    <div class="p-4 md:p-5">
+                        <p class="text-gray-500 text-[10px] md:text-xs leading-relaxed italic">"Tujuan: Membuktikan bahwa gaya berpakaian tertutup bisa tetap terlihat modern, edgy, dan berkarakter, serta menginspirasi anak muda untuk tampil percaya diri dengan identitasnya."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="talent.html" class="inline-block text-[#434343] font-black text-sm border-b-2 border-[#434343] pb-1 hover:text-orange-500 hover:border-orange-500 transition-colors">Lihat Talent Lainnya</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="daftar" class="py-20 md:py-32 bg-[#1a1a1a] text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-black mb-8 text-red-400">⚠️ BUKAN UNTUK SEMUA ORANG ⚠️</h2>
+            <p class="text-gray-300 text-base md:text-xl mb-12 font-medium">Kami tidak merekrut sembarang orang. Kami hanya mencari kreator yang:</p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-16">
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 md:w-1/3">
+                    <div class="text-3xl mb-4">🔥</div>
+                    <h4 class="font-bold mb-2">Konsisten</h4>
+                    <p class="text-sm text-gray-400">Siap berkomitmen dan mau terus belajar hal baru.</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 md:w-1/3">
+                    <div class="text-3xl mb-4">👽</div>
+                    <h4 class="font-bold mb-2">Berani Beda</h4>
+                    <p class="text-sm text-gray-400">Punya karakter unik dan tidak cuma ikut-ikutan.</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 md:w-1/3">
+                    <div class="text-3xl mb-4">📈</div>
+                    <h4 class="font-bold mb-2">Siap Bertumbuh</h4>
+                    <p class="text-sm text-gray-400">Siap melangkah ke level profesional secara organik.</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-orange-500 to-yellow-500 p-1 rounded-3xl inline-block shadow-[0_15px_40px_rgba(249,115,22,0.4)]">
+                <a href="https://wa.me/6282234041064" target="_blank" class="block bg-[#1a1a1a] hover:bg-transparent hover:text-gray-900 transition-all duration-300 text-white px-10 py-5 rounded-[22px] font-black text-lg uppercase tracking-wider">
+                    Mulai Karir Kreator Saya
                 </a>
             </div>
         </div>
@@ -260,7 +295,6 @@
 
     <footer class="pt-12 md:pt-16 lg:pt-24 pb-8 bg-white relative overflow-hidden z-10 font-sans">
         <div class="max-w-6xl mx-auto px-6 relative">
-            
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 md:mb-14 lg:mb-16 gap-8">
                 <img src="images/logo.png" alt="Rakryan Piktura" class="h-8 md:h-10 lg:h-12">
                 <div class="flex items-center gap-4">

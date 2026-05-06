@@ -9,6 +9,13 @@
     <script src="https://cdn.tailwindcss.com"></script>    
     <title>Social Media & Live Agency</title>
 </head>
+<style>
+        .bg-dashed-line {
+        background-image: linear-gradient(to right, #fb923c 50%, transparent 50%);
+        background-size: 15px 1px;
+        background-repeat: repeat-x;
+    }
+</style>
 <body>
     <header class="fixed top-0 w-full z-50 px-4 md:px-6">
         <nav id="main-nav" class="max-w-6xl mx-auto bg-transparent backdrop-blur-none border border-transparent py-3 px-4 md:px-6 rounded-2xl transition-all duration-300 mt-4 md:mt-6 flex items-center justify-between">
@@ -130,7 +137,7 @@
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
                                     <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Akses eksklusif ke jaringan Pasukan Kreator Lokal</span>
+                                <span class="text-gray-700 font-medium text-xs md:text-sm">Produksi UGC Content berkualitas untuk meningkatkan kepercayaan brand</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
@@ -186,6 +193,56 @@
                 </a>
             </div>
             
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-orange-500 font-bold text-xs md:text-sm uppercase tracking-[0.3em] mb-4 block">Work Process</span>
+                <h2 class="text-3xl md:text-4xl font-black text-[#434343]">Bagaimana Kami <span class="text-orange-500">Bekerja?</span></h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto font-medium">Alur kerja profesional yang terukur untuk memastikan setiap konten dan sesi live memberikan hasil maksimal bagi brand Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                <div class="hidden lg:block absolute top-24 left-0 w-full h-[2px] bg-dashed-line z-0"></div>
+
+                <div class="relative z-10 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 bg-white rounded-3xl shadow-xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-all duration-300 border border-gray-50">
+                        <i class="fas fa-search text-2xl text-orange-500"></i>
+                    </div>
+                    <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-4 border-4 border-white shadow-md">1</div>
+                    <h4 class="text-lg font-black text-[#434343] mb-2">Research & Audit</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Menganalisa kompetitor, tren terbaru, dan mengaudit performa akun Anda saat ini.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 bg-white rounded-3xl shadow-xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-all duration-300 border border-gray-50">
+                        <i class="fas fa-lightbulb text-2xl text-orange-500"></i>
+                    </div>
+                    <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-4 border-4 border-white shadow-md">2</div>
+                    <h4 class="text-lg font-black text-[#434343] mb-2">Strategy & Concept</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Menyusun konten pilar, strategi hashtag, hingga konsep skrip live yang menjual.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 bg-white rounded-3xl shadow-xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-all duration-300 border border-gray-50">
+                        <i class="fas fa-clapperboard text-2xl text-orange-500"></i>
+                    </div>
+                    <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-4 border-4 border-white shadow-md">3</div>
+                    <h4 class="text-lg font-black text-[#434343] mb-2">Production & Live</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Eksekusi konten kreatif berkualitas tinggi dan pelaksanaan sesi live sales yang interaktif.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center group">
+                    <div class="w-20 h-20 bg-white rounded-3xl shadow-xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-all duration-300 border border-gray-50">
+                        <i class="fas fa-chart-pie text-2xl text-orange-500"></i>
+                    </div>
+                    <div class="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-4 border-4 border-white shadow-md">4</div>
+                    <h4 class="text-lg font-black text-[#434343] mb-2">Report & Evaluate</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Laporan bulanan yang transparan dan evaluasi strategi untuk peningkatan performa ke depan.</p>
+                </div>
+            </div>
         </div>
     </section>
 
