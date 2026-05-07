@@ -10,10 +10,22 @@
     <title>Social Media & Live Agency</title>
 </head>
 <style>
-        .bg-dashed-line {
+    .bg-dashed-line {
         background-image: linear-gradient(to right, #fb923c 50%, transparent 50%);
         background-size: 15px 1px;
         background-repeat: repeat-x;
+    }
+    @keyframes packageScroll {
+        0%, 25% { transform: translateY(0); }
+        33%, 58% { transform: translateY(-100%); }
+        66%, 91% { transform: translateY(-200%); }
+        100% { transform: translateY(-300%); }
+    }
+    .animate-package-scroll {
+        animation: packageScroll 12s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    }
+    .group:hover .animate-package-scroll {
+        animation-play-state: running;
     }
 </style>
 <body>
@@ -112,71 +124,159 @@
                 <p class="text-gray-500 text-xs md:text-base max-w-xl mx-auto leading-relaxed">Solusi tanpa pusing, nikmati efisiensi biaya operasional hingga 60% <span class="md:block">dibandingkan membangun tim in-house sendiri.</span></p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8" ontouchstart="">
                 
                 <div class="group relative flex flex-col p-6 md:p-8 rounded-[2.5rem] md:rounded-[3rem] bg-white border border-gray-100 shadow-sm transition-all duration-500 overflow-hidden hover:border-orange-100 hover:shadow-[0_20px_50px_rgba(249,115,22,0.2)]">
-
-                    <div class="relative justify-center items-center z-10">
+                    
+                    <div class="relative z-10 transition-opacity duration-300 group-hover:opacity-0">
                         <div class="w-14 h-14 md:w-16 md:h-16 bg-orange-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-100">
                             <img src="images/Icon_message.png" class="w-8" alt="">
                         </div>
                         <div class="flex justify-between">
-                            <h3 class="text-xl md:text-2xl font-medium text-[#434343] group-hover:text-orange-500 transition-colors duration-300 mb-4">Social Media Management</h3>
+                            <h3 class="text-xl md:text-2xl font-medium text-[#434343] mb-4">Social Media Management</h3>
                         </div>
                         <ul class="text-gray-500 text-xs md:text-sm leading-relaxed space-y-4 mb-8">
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Manajemen konten harian yang terintegrasi</span>
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Manajemen konten harian yang terintegrasi</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Produksi konten langsung (on-site) di outlet Anda</span>
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Produksi konten langsung (on-site) di outlet Anda</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Produksi UGC Content berkualitas untuk meningkatkan kepercayaan brand</span>
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Produksi UGC Content berkualitas untuk meningkatkan kepercayaan brand</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Menghemat biaya operasional secara signifikan</span>
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Menghemat biaya operasional secara signifikan</span>
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="absolute inset-0 z-20 bg-white p-6 md:p-8 flex flex-row gap-6 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto group-active:pointer-events-auto">
+                        <div class="flex-1 flex flex-col overflow-hidden">
+                            <h4 class="text-orange-500 font-bold text-sm uppercase tracking-wider mb-4">Daftar Paket SMM</h4>
+                            <div class="flex-1 overflow-hidden relative">
+                                <div class="animate-package-scroll flex flex-col h-full">
+                                    
+                                    <div class="h-full flex-shrink-0 flex flex-col justify-center">
+                                        <p class="text-lg font-bold text-[#434343] mb-2">1. Starter Package</p>
+                                        <ul class="text-xs text-gray-600 space-y-1 mb-3">
+                                            <li>✅ 20 Short Video</li>
+                                            <li>✅ Konten Kalender</li>
+                                            <li>✅ 1x Produksi di Outlet</li>
+                                            <li>✅ Profil Optimization</li>
+                                        </ul>
+                                        <div class="bg-orange-500 inline-block px-3 py-1 rounded-full w-max shadow-md shadow-orange-200">
+                                            <p class="text-white text-xs font-black">IDR 1.175K</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="h-full flex-shrink-0 flex flex-col justify-center">
+                                        <p class="text-lg font-bold text-[#434343] mb-2">2. Growth Package</p>
+                                        <ul class="text-xs text-gray-600 space-y-1 mb-3">
+                                            <li>✅ 20 Short Video</li>
+                                            <li>✅ 7 Feed</li>
+                                            <li>✅ 2x Produksi di Outlet</li>
+                                            <li>✅ Profil Optimization</li>
+                                            <li>✅ 1 Kali UGC Content</li>
+                                            <li>✅ Monthly Report & Meeting</li>
+                                        </ul>
+                                        <div class="bg-orange-500 inline-block px-3 py-1 rounded-full w-max shadow-md shadow-orange-200">
+                                            <p class="text-white text-xs font-black">IDR 1.575K</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="h-full flex-shrink-0 flex flex-col justify-center">
+                                        <p class="text-lg font-bold text-[#434343] mb-2">3. Optimasi Package</p>
+                                        <ul class="text-xs text-gray-600 space-y-1 mb-3">
+                                            <li>✅ 25 Short Video</li>
+                                            <li>✅ 7 Feed</li>
+                                            <li>✅ Free Revisi</li>
+                                            <li>✅ 3x Produksi di Outlet</li>
+                                            <li>✅ Profil Optimization</li>
+                                            <li>✅ 2 Kali UGC Content</li>
+                                            <li>✅ Monthly Reporting & Meeting</li>
+                                            <li>✅ Live Session di Outlet</li>
+                                        </ul>
+                                        <div class="bg-orange-500 inline-block px-3 py-1 rounded-full w-max shadow-md shadow-orange-200">
+                                            <p class="text-white text-xs font-black">IDR 1.850K</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="h-full flex-shrink-0 flex flex-col justify-center">
+                                        <p class="text-lg font-bold text-[#434343] mb-2">1. Starter Package</p>
+                                        <ul class="text-xs text-gray-600 space-y-1 mb-3">
+                                            <li>✅ 20 Short Video</li>
+                                            <li>✅ Konten Kalender</li>
+                                            <li>✅ 1x Produksi di Outlet</li>
+                                            <li>✅ Profil Optimization</li>
+                                        </ul>
+                                        <div class="bg-orange-500 inline-block px-3 py-1 rounded-full w-max shadow-md shadow-orange-200">
+                                            <p class="text-white text-xs font-black">IDR 1.175K</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-32 md:w-44 flex flex-col items-center justify-center shrink-0 border-l border-dashed border-orange-200 pl-6">
+                            <div class="bg-white p-3 rounded-2xl shadow-lg border border-orange-100 mb-3 hover:scale-105 transition">
+                                <img src="images/codeQR.png" class="w-24 md:w-40 h-auto" alt="Scan QR">
+                            </div>
+                            <span class="text-[11px] font-bold text-gray-500 uppercase tracking-wide text-center leading-tight">
+                                Scan untuk<br>konsultasi
+                            </span>
+                            <span class="text-[10px] text-gray-400 mt-1">
+                                0822-3404-1064
+                            </span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="group relative flex flex-col p-6 md:p-8 rounded-[2.5rem] md:rounded-[3rem] bg-white border border-gray-100 shadow-sm transition-all duration-500 overflow-hidden hover:border-orange-100 hover:shadow-[0_20px_50px_rgba(249,115,22,0.2)]">
-
-                    <div class="relative justify-center items-center z-10">
+                    <div class="relative z-10">
                         <div class="w-14 h-14 md:w-16 md:h-16 bg-orange-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-100">
                             <img src="images/Icon_video.png" class="w-8" alt="">
                         </div>
                         <div class="flex justify-between">
-                            <h3 class="text-xl md:text-2xl font-medium text-[#434343] group-hover:text-orange-500 transition-colors duration-300 mb-4">Live Sales & Streaming</h3>
+                            <h3 class="text-xl md:text-2xl font-medium text-[#434343] mb-4">Live Sales & Streaming</h3>
                         </div>
                         <ul class="text-gray-500 text-xs md:text-sm leading-relaxed space-y-4 mb-8">
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Host profesional berorientasi penuh pada konversi</span>
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Host profesional berorientasi penuh pada konversi</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Dukungan studio profesional siap pakai</span>
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Dukungan studio profesional siap pakai</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Peralatan kreatif & broadcasting lengkap</span>
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Peralatan kreatif & broadcasting lengkap</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <div class="mt-0.5 bg-orange-200 rounded-full p-1 shrink-0 flex items-center justify-center">
-                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg></div>
-                                <span class="text-gray-700 font-medium text-xs md:text-sm">Termasuk sesi livestreaming ekstra (S&K berlaku)</span>
+                                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Termasuk sesi livestreaming ekstra (S&K berlaku)</span>
                             </li>
                         </ul>
                     </div>
@@ -184,15 +284,14 @@
 
             </div>
 
-            <div class="flex justify-center w-full pt-2">
+            <div class="flex justify-center w-full pt-8">
                 <a href="https://wa.me/6282234041064" target="_blank" class="inline-block">
-                    <button class="flex items-center justify-center gap-2 bg-gradient-to-r from-[#5DF878] to-[#08B924] text-white px-5 py-3 rounded-lg text-sm font-bold shadow-md active:scale-95 transition">
-                        <img src="images/Icon_whatsapp.png" alt="Icon_whatsapp" class="w-4 h-4">
+                    <button class="flex items-center justify-center gap-2 bg-gradient-to-r from-[#5DF878] to-[#08B924] text-white px-8 py-4 rounded-xl text-base font-bold shadow-md active:scale-95 transition">
+                        <img src="images/Icon_whatsapp.png" alt="Icon_whatsapp" class="w-5 h-5">
                         Registrasi Sekarang
                     </button>
                 </a>
             </div>
-            
         </div>
     </section>
 
@@ -438,8 +537,8 @@
                         </button>
                     </li>
                     <li>
-                        <button onclick="switchTab('bio')" id="btn-bio" class="tab-btn inline-block px-6 py-2.5 text-gray-500 hover:text-black font-medium text-[13px] transition-all">
-                            Optimasi Bio
+                        <button onclick="switchTab('result')" id="btn-result" class="tab-btn inline-block px-6 py-2.5 text-gray-500 hover:text-black font-medium text-[13px] transition-all">
+                            Result Oriented
                         </button>
                     </li>
                 </ul>
@@ -479,23 +578,21 @@
                 </div>
             </div>
 
-            <div id="content-bio" class="tab-content hidden animate-fade-up">
-                <div class="flex flex-wrap justify-center md:grid md:grid-cols-3 md:justify-items-center gap-4">
-                    <div class="w-[calc(50%-8px)] md:w-56 bg-gray-300 rounded-2xl overflow-hidden relative shadow-sm">
-                        <div class="absolute top-0 left-0 w-full h-9 md:h-12"></div>
-                        <img src="images/Bio1.png" class="w-full h-full object-cover">
+            <div id="content-result" class="tab-content hidden animate-fade-up">
+                <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 p-4">
+                    
+                    <div class="w-full md:w-auto md:h-[450px] bg-white rounded-3xl overflow-hidden relative shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 transition-transform hover:scale-[1.03] duration-300">
+                        <div class="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-black/5 to-transparent z-10"></div>
+                        <img src="images/Result1.png" class="w-full md:w-auto h-full object-contain md:object-cover">
                     </div>
-                    <div class="w-[calc(50%-8px)] md:w-56 bg-gray-300 rounded-2xl overflow-hidden relative shadow-sm">
-                        <div class="absolute top-0 left-0 w-full h-9 md:h-12"></div>
-                        <img src="images/Bio2.png" class="w-full h-full object-cover">
+
+                    <div class="w-full md:w-auto md:h-[450px] bg-white rounded-3xl overflow-hidden relative shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 transition-transform hover:scale-[1.03] duration-300">
+                        <div class="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-black/5 to-transparent z-10"></div>
+                        <img src="images/Result2.png" class="w-full md:w-auto h-full object-contain md:object-cover">
                     </div>
-                    <div class="w-[calc(50%-8px)] md:w-56 bg-gray-300 rounded-2xl overflow-hidden relative shadow-sm">
-                        <div class="absolute top-0 left-0 w-full h-9 md:h-12"></div>
-                        <img src="images/Bio3.png" class="w-full h-full object-cover">
-                    </div>
+
                 </div>
             </div>
-
         </div>
     </section>
 
