@@ -91,213 +91,293 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-                <div class="group relative h-[400px] [perspective:1000px]">
+                <div class="group relative h-[400px] [perspective:1000px] cursor-pointer">
                     <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        
+
                         <div class="absolute inset-0 backface-hidden bg-white p-8 rounded-[2.5rem] border border-gray-100 flex flex-col justify-between overflow-hidden shadow-sm">
+                            
+                            <div class="absolute top-6 right-6">
+                                <span class="bg-blue-50 text-blue-600 text-[9px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest border border-blue-100 shadow-sm flex items-center gap-1">
+                                    <i class="fas fa-video mr-1"></i> Production Class
+                                </span>
+                            </div>
+
                             <div>
-                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-colors duration-500">
+                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-all duration-500 shadow-inner">
                                     <i class="fas fa-mobile-alt"></i>
                                 </div>
                                 <h3 class="text-xl font-black text-[#434343] mb-3 transition-colors">Mobile Production Pro</h3>
                                 <p class="text-gray-500 text-sm leading-relaxed">Teknik syuting dan editing level profesional hanya bermodalkan smartphone.</p>
                             </div>
-                            <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
-                                <span>Cinematic Mobile</span>
-                                <div class="w-8 h-[1px] bg-orange-500"></div>
+                            
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-50">
+                                <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
+                                    <span>Lihat Detail</span>
+                                    <div class="w-8 h-[1px] bg-orange-500"></div>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-orange-50 transition-colors">
+                                    <i class="fas fa-sync-alt text-gray-300 text-[10px] group-hover:text-orange-500 group-hover:rotate-180 transition-all duration-700"></i>
+                                </div>
                             </div>
                         </div>
 
                         <div class="absolute inset-0 h-full w-full rounded-[2.5rem] bg-white backface-hidden [transform:rotateY(180deg)] overflow-hidden flex flex-col border border-gray-100 shadow-xl">
                             <div class="bg-gray-100/80 px-6 py-6 border-b border-gray-100 flex justify-between items-center text-[#434343]">
                                 <div>
-                                    <h3 class="font-bold text-sm">Starter</h3>
-                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-black rounded-3xl">Most popular</span>
+                                    <h3 class="font-bold text-sm">Starter Pack</h3>
+                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-blue-600 rounded-3xl uppercase">Best Seller</span>
                                 </div>
                                 <div class="text-right">
                                     <span class="block text-sm text-green-700 line-through font-bold leading-none">IDR 1.5M</span>
-                                    <span class="block text-[10px] text-gray-500 font-medium mt-1">/ per orang</span>
+                                    <span class="block text-[10px] text-gray-500 font-medium mt-1">/ lifetime access</span>
                                 </div>
                             </div>
+
                             <div class="p-6 flex flex-col flex-1">
-                                <p class="text-lg font-bold text-[#434343] mb-2">1. Mobile Production Pro</p>
-                                <p class="text-[11px] text-green-600 font-bold mb-2">✅ Fokus: Kualitas Visual & Efisiensi Eksekusi</p>
-                                <ul class="text-xs text-gray-600 space-y-1">
-                                    <li>• Smartphone Cinematography</li>
-                                    <li>• Mobile Editing (CapCut Mastery)</li>
-                                    <li>• File Management</li>
+                                <p class="text-lg font-bold text-[#434343] mb-2">Kurikulum Kelas</p>
+                                <p class="text-[11px] text-green-600 font-bold mb-2">✅ Fokus: Kualitas Visual & Efisiensi</p>
+                                <ul class="text-[11px] text-gray-600 space-y-2 mb-4">
+                                    <li class="flex items-start gap-2 italic">
+                                        <i class="fas fa-camera text-orange-400 mt-0.5 text-[10px]"></i> Smartphone Cinematography
+                                    </li>
+                                    <li class="flex items-start gap-2 italic">
+                                        <i class="fas fa-cut text-orange-400 mt-0.5 text-[10px]"></i> Mobile Editing (CapCut Mastery)
+                                    </li>
+                                    <li class="flex items-start gap-2 italic">
+                                        <i class="fas fa-folder-open text-orange-400 mt-0.5 text-[10px]"></i> Professional File Management
+                                    </li>
                                 </ul>
-                                <button class="mt-auto w-full bg-orange-500 text-white py-3 rounded-2xl text-[12px] font-bold hover:bg-orange-600 transition-all">
-                                    Ambil Diskon
+
+                                <button class="mt-auto group/btn relative w-full overflow-hidden bg-[#434343] text-white py-3.5 rounded-2xl text-[12px] font-black transition-all hover:bg-orange-500 active:scale-95 shadow-md shadow-gray-200">
+                                    <span class="relative z-10 flex items-center justify-center gap-2 tracking-wide">
+                                        AMBIL DISKON SEKARANG
+                                        <i class="fas fa-arrow-right text-[10px] group-hover/btn:translate-x-1 transition-transform"></i>
+                                    </span>
                                 </button>
                             </div>
                         </div>
-
+                        
                     </div>
                 </div>
 
-                <div class="group relative h-[400px] [perspective:1000px]">
+                <div class="group relative h-[400px] [perspective:1000px] cursor-pointer">
                     <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                         <div class="absolute inset-0 backface-hidden bg-white p-8 rounded-[2.5rem] border border-gray-100 flex flex-col justify-between overflow-hidden shadow-sm">
+                            
+                            <div class="absolute top-6 right-6">
+                                <span class="bg-purple-50 text-purple-600 text-[9px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest border border-purple-100 shadow-sm">
+                                    <i class="fas fa-pen-fancy mr-1"></i> Creative Class
+                                </span>
+                            </div>
+
                             <div>
-                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-colors duration-500">
+                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-all duration-500 shadow-inner">
                                     <i class="fas fa-pen-nib"></i>
                                 </div>
-                                <h3 class="text-xl font-black text-[#434343] mb-3 transition-colors whitespace-nowrap">Content Strategy & Scripting</h3>
-                                <p class="text-gray-500 text-sm leading-relaxed">Seni riset tren dan menulis naskah high-hook yang memicu interaksi tinggi.</p>
-                            </div>    
-                            <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
-                                <span>High Retention</span>
-                                <div class="w-8 h-[1px] bg-orange-500"></div>
+                                <h3 class="text-xl font-black text-[#434343] mb-3 transition-colors">Content Strategy & Scripting</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed">Seni riset tren dan menulis naskah high-hook yang memicu interaksi dan retensi tinggi.</p>
+                            </div>
+                            
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-50">
+                                <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
+                                    <span>Lihat Kurikulum</span>
+                                    <div class="w-8 h-[1px] bg-orange-500"></div>
+                                </div>
+                                <div class="relative">
+                                    <i class="fas fa-hand-pointer text-gray-300 text-[10px] animate-ping absolute"></i>
+                                    <i class="fas fa-hand-pointer text-gray-300 text-[10px] relative z-10"></i>
+                                </div>
                             </div>
                         </div>
 
                         <div class="absolute inset-0 h-full w-full rounded-[2.5rem] bg-white backface-hidden [transform:rotateY(180deg)] overflow-hidden flex flex-col border border-gray-100 shadow-xl">
                             <div class="bg-gray-100/80 px-6 py-6 border-b border-gray-100 flex justify-between items-center text-[#434343]">
                                 <div>
-                                    <h3 class="font-bold text-sm">Starter</h3>
-                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-black rounded-3xl">Most popular</span>
+                                    <h3 class="font-bold text-sm">Starter Pack</h3>
+                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-purple-600 rounded-3xl uppercase">Best Value</span>
                                 </div>
                                 <div class="text-right">
                                     <span class="block text-sm text-green-700 line-through font-bold leading-none">IDR 1.5M</span>
-                                    <span class="block text-[10px] text-gray-500 font-medium mt-1">/ per orang</span>
+                                    <span class="block text-[10px] text-gray-500 font-medium mt-1">/ lifetime access</span>
                                 </div>
                             </div>
+
                             <div class="p-6 flex flex-col flex-1">
-                                <p class="text-lg font-bold text-[#434343] mb-2">2. Content Strategy</p>
+                                <p class="text-lg font-bold text-[#434343] mb-2">Materi Utama</p>
                                 <p class="text-[11px] text-green-600 font-bold mb-2">✅ Fokus: Psikologi Audiens & Narasi</p>
-                                <ul class="text-xs text-gray-600 space-y-1">
-                                    <li>• The Power of Hooks</li>
-                                    <li>• Storytelling Framework</li>
-                                    <li>• Trend Analysis</li>
-                                    <li>• Persona Audiens</li>
+                                <ul class="text-[11px] text-gray-600 space-y-1.5 mb-4">
+                                    <li class="flex items-center gap-2">• The Power of Viral Hooks</li>
+                                    <li class="flex items-center gap-2">• Storytelling Framework</li>
+                                    <li class="flex items-center gap-2">• Viral Trend Analysis</li>
+                                    <li class="flex items-center gap-2">• Mapping Persona Audiens</li>
                                 </ul>
-                                <button class="mt-auto w-full bg-orange-500 text-white py-3 rounded-2xl text-[12px] font-bold hover:bg-orange-600 transition-all">
-                                    Ambil Diskon
+
+                                <button class="mt-auto group/btn relative w-full overflow-hidden bg-[#434343] text-white py-3.5 rounded-2xl text-[12px] font-black transition-all hover:bg-orange-500 active:scale-95">
+                                    <span class="relative z-10 flex items-center justify-center gap-2">
+                                        Ambil Promo Sekarang
+                                        <i class="fas fa-arrow-right text-[10px] group-hover/btn:translate-x-1 transition-transform"></i>
+                                    </span>
+                                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                                 </button>
                             </div>
                         </div>
-
+                        
                     </div> 
                 </div>
                 
-                <div class="group relative h-[400px] [perspective:1000px]">
+                <div class="group relative h-[400px] [perspective:1000px] cursor-pointer">
                     <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                         <div class="absolute inset-0 backface-hidden bg-white p-8 rounded-[2.5rem] border border-gray-100 flex flex-col justify-between overflow-hidden shadow-sm">
+                            
+                            <div class="absolute top-6 right-6">
+                                <span class="bg-red-50 text-red-600 text-[9px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest border border-red-100 shadow-sm flex items-center gap-1">
+                                    <span class="w-1.5 h-1.5 bg-red-600 rounded-full animate-ping"></span>
+                                    Live Masterclass
+                                </span>
+                            </div>
+
                             <div>
-                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-colors duration-500">
+                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-all duration-500 shadow-inner">
                                     <i class="fas fa-video"></i>
                                 </div>
                                 <h3 class="text-xl font-black text-[#434343] mb-3 transition-colors">Live Stream Authority</h3>
                                 <p class="text-gray-500 text-sm leading-relaxed">Strategi menguasai panggung Live TikTok & Shopee serta teknik memicu check-out instan.</p>
                             </div>
                             
-                            <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
-                                <span>Instant Conversion</span>
-                                <div class="w-8 h-[1px] bg-orange-500"></div>
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-50">
+                                <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
+                                    <span>Intip Materi</span>
+                                    <div class="w-8 h-[1px] bg-orange-500"></div>
+                                </div>
+                                <div class="relative flex items-center justify-center">
+                                    <i class="fas fa-hand-pointer text-gray-300 text-xs animate-bounce"></i>
+                                </div>
                             </div>
                         </div>
 
                         <div class="absolute inset-0 h-full w-full rounded-[2.5rem] bg-white backface-hidden [transform:rotateY(180deg)] overflow-hidden flex flex-col border border-gray-100 shadow-xl">
                             <div class="bg-gray-100/80 px-6 py-6 border-b border-gray-100 flex justify-between items-center text-[#434343]">
                                 <div>
-                                    <h3 class="font-bold text-sm">Starter</h3>
-                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-black rounded-3xl">Most popular</span>
+                                    <h3 class="font-bold text-sm">Best Seller</h3>
+                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-red-600 rounded-3xl uppercase">Live Now</span>
                                 </div>
                                 <div class="text-right">
                                     <span class="block text-sm text-green-700 line-through font-bold leading-none">IDR 1.5M</span>
-                                    <span class="block text-[10px] text-gray-500 font-medium mt-1">/ per orang</span>
+                                    <span class="block text-[10px] text-gray-500 font-medium mt-1">/ lifetime</span>
                                 </div>
                             </div>
+
                             <div class="p-6 flex flex-col flex-1">
-                                <p class="text-lg font-bold text-[#434343] mb-2">3. Live Stream Authority</p>
+                                <p class="text-lg font-bold text-[#434343] mb-2">Kurikulum Live</p>
                                 <p class="text-[11px] text-green-600 font-bold mb-2">✅ Fokus: Public Speaking & Conversion</p>
-                                <ul class="text-xs text-gray-600 space-y-1">
-                                    <li>• Live Engagement</li>
-                                    <li>• Sales Conversion</li>
-                                    <li>• Technical Setup</li>
-                                    <li>• Winning Product Selection</li>
-                                    <li>• Dashboard analisis</li>
+                                <ul class="text-[11px] text-gray-600 space-y-1 mb-4 flex-1">
+                                    <li class="flex items-center gap-2">• High-Level Live Engagement</li>
+                                    <li class="flex items-center gap-2">• Psychological Sales Conversion</li>
+                                    <li class="flex items-center gap-2">• Professional Technical Setup</li>
+                                    <li class="flex items-center gap-2">• Winning Product Selection</li>
                                 </ul>
-                                <button class="mt-auto w-full bg-orange-500 text-white py-3 rounded-2xl text-[12px] font-bold hover:bg-orange-600 transition-all">
-                                    Ambil Diskon
+
+                                <button class="mt-auto group/btn relative w-full overflow-hidden bg-[#434343] text-white py-3.5 rounded-2xl text-[12px] font-black transition-all hover:bg-orange-500 active:scale-95">
+                                    <span class="relative z-10 flex items-center justify-center gap-2">
+                                        Gabung Kelas Sekarang
+                                        <i class="fas fa-bolt text-[10px] group-hover/btn:scale-125 transition-transform text-yellow-400"></i>
+                                    </span>
                                 </button>
                             </div>
                         </div>
-
+                        
                     </div> 
                 </div>
 
-                <div class="group relative h-[400px] [perspective:1000px]">
+                <div class="group relative h-[400px] [perspective:1000px] cursor-pointer">
                     <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                         <div class="absolute inset-0 backface-hidden bg-white p-8 rounded-[2.5rem] border border-gray-100 flex flex-col justify-between overflow-hidden shadow-sm">
+                            
+                            <div class="absolute top-6 right-6">
+                                <span class="bg-green-50 text-green-600 text-[9px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest border border-green-100 shadow-sm">
+                                    <i class="fas fa-check-circle mr-1"></i> Career Class
+                                </span>
+                            </div>
+
                             <div>
-                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-colors duration-500">
+                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-all duration-500 shadow-inner">
                                     <i class="fas fa-bullhorn"></i>
                                 </div>
                                 <h3 class="text-xl font-black text-[#434343] mb-3 transition-colors">Social Media Specialist</h3>
-                                <p class="text-gray-500 text-sm leading-relaxed">Kursus lengkap manajemen akun, dari riset kompetitor hingga analisis data.</p>
+                                <p class="text-gray-500 text-sm leading-relaxed">Kursus lengkap manajemen akun, dari riset kompetitor hingga analisis data mendalam.</p>
                             </div>
                             
-                            
-                            <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
-                                <span>Expert Management</span>
-                                <div class="w-8 h-[1px] bg-orange-500"></div>
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-50">
+                                <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
+                                    <span>Lihat Detail</span>
+                                    <div class="w-8 h-[1px] bg-orange-500 animate-pulse"></div>
+                                </div>
+                                <i class="fas fa-mouse-pointer text-gray-300 text-[10px] animate-bounce"></i>
                             </div>
                         </div>
 
                         <div class="absolute inset-0 h-full w-full rounded-[2.5rem] bg-white backface-hidden [transform:rotateY(180deg)] overflow-hidden flex flex-col border border-gray-100 shadow-xl">
                             <div class="bg-gray-100/80 px-6 py-6 border-b border-gray-100 flex justify-between items-center text-[#434343]">
                                 <div>
-                                    <h3 class="font-bold text-sm">Starter</h3>
-                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-black rounded-3xl">Most popular</span>
+                                    <h3 class="font-bold text-sm">Career Ready</h3>
+                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-green-600 rounded-3xl uppercase">Top Rated</span>
                                 </div>
                                 <div class="text-right">
                                     <span class="block text-sm text-green-700 line-through font-bold leading-none">IDR 1.5M</span>
                                     <span class="block text-[10px] text-gray-500 font-medium mt-1">/ per orang</span>
                                 </div>
                             </div>
+
                             <div class="p-6 flex flex-col flex-1">
-                                <p class="text-lg font-bold text-[#434343] mb-2">4. Social Media Specialist</p>
+                                <p class="text-lg font-bold text-[#434343] mb-2">Kurikulum Utama</p>
                                 <p class="text-[11px] text-green-600 font-bold mb-2">✅ Fokus: Manajemen Akun & Otoritas</p>
-                                <ul class="text-xs text-gray-600 space-y-1">
-                                    <li>• Account Audit</li>
-                                    <li>• Content Pillars</li>
-                                    <li>• Branding Uniqueness</li>
-                                    <li>• Performance Analytics</li>
+                                <ul class="text-xs text-gray-600 space-y-1.5 mb-4">
+                                    <li class="flex items-center gap-2 font-medium">• Comprehensive Account Audit</li>
+                                    <li class="flex items-center gap-2 font-medium">• Building Content Pillars</li>
+                                    <li class="flex items-center gap-2 font-medium">• Branding Uniqueness Strategy</li>
+                                    <li class="flex items-center gap-2 font-medium">• Performance Analytics</li>
                                 </ul>
-                                <button class="mt-auto w-full bg-orange-500 text-white py-3 rounded-2xl text-[12px] font-bold hover:bg-orange-600 transition-all">
-                                    Ambil Diskon
+
+                                <button class="mt-auto group/btn relative w-full overflow-hidden bg-[#434343] text-white py-3.5 rounded-2xl text-[12px] font-extrabold transition-all hover:bg-orange-500 active:scale-95 shadow-lg">
+                                    <span class="relative z-10 flex items-center justify-center gap-2">
+                                        Ambil Diskon Sekarang
+                                        <i class="fas fa-arrow-right text-[10px] group-hover/btn:translate-x-1 transition-transform"></i>
+                                    </span>
                                 </button>
                             </div>
                         </div>
-
+                        
                     </div> 
                 </div>
 
-                <div class="group relative h-[400px] [perspective:1000px]">
+                <div class="group relative h-[400px] [perspective:1000px] cursor-pointer">
                     <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                         <div class="absolute inset-0 backface-hidden bg-white p-8 rounded-[2.5rem] border border-gray-100 flex flex-col justify-between overflow-hidden shadow-sm">
+                            
                             <div class="absolute top-6 right-6">
-                                <span class="bg-orange-100 text-orange-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter shadow-sm">
-                                    Online Class
+                                <span class="bg-orange-50 text-orange-600 text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest border border-orange-100 shadow-sm">
+                                    <i class="fas fa-graduation-cap mr-1"></i> Program Kelas
                                 </span>
                             </div>
+
                             <div>
-                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-colors duration-500">
+                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-all duration-500">
                                     <i class="fas fa-laptop-house"></i>
                                 </div>
                                 <h3 class="text-xl font-black text-[#434343] mb-3 transition-colors">Creator Affiliate Bootcamp</h3>
                                 <p class="text-gray-500 text-sm leading-relaxed">Pelajari strategi membangun aset digital secara mandiri melalui modul video eksklusif dan sesi webinar interaktif.</p>
                             </div>
                             
-                            <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
-                                <span>Lifetime Access</span>
-                                <div class="w-8 h-[1px] bg-orange-500"></div>
+                            <div class="flex items-center justify-between border-t border-gray-50 pt-4">
+                                <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
+                                    <span>Cek Kurikulum</span>
+                                    <div class="w-8 h-[1px] bg-orange-500"></div>
+                                </div>
+                                <i class="fas fa-sync-alt text-gray-300 text-[10px] animate-pulse"></i>
                             </div>
                         </div>
 
@@ -312,6 +392,7 @@
                                     <span class="block text-[10px] text-gray-500 font-medium mt-1">/ per orang</span>
                                 </div>
                             </div>
+
                             <div class="p-6 flex flex-col flex-1">
                                 <p class="text-lg font-bold text-[#434343] mb-2">5. Creator Affiliate</p>
                                 <p class="text-[11px] text-green-600 font-bold mb-2">✅ Fokus: Monetisasi & Passive Income</p>
@@ -320,64 +401,87 @@
                                     <li>• Affiliate Funneling</li>
                                     <li>• Review Technique</li>
                                 </ul>
-                                <button class="mt-auto w-full bg-orange-500 text-white py-3 rounded-2xl text-[12px] font-bold hover:bg-orange-600 transition-all">
-                                    Ambil Diskon
+
+                                <button class="mt-auto group/btn relative w-full overflow-hidden bg-[#434343] text-white py-3.5 rounded-2xl text-[12px] font-bold transition-all hover:bg-orange-500 active:scale-95 shadow-lg shadow-gray-200">
+                                    <span class="relative z-10 flex items-center justify-center gap-2">
+                                        Daftar Sekarang
+                                        <i class="fas fa-arrow-right text-[10px] group-hover/btn:translate-x-1 transition-transform"></i>
+                                    </span>
                                 </button>
                             </div>
                         </div>
                         
                     </div> 
                 </div>
-                
 
-                <div class="group relative h-[400px] [perspective:1000px]">
+                <div class="group relative h-[400px] [perspective:1000px] cursor-pointer">
                     <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                         <div class="absolute inset-0 backface-hidden bg-white p-8 rounded-[2.5rem] border border-gray-100 flex flex-col justify-between overflow-hidden shadow-sm">
+                            
+                            <div class="absolute top-6 right-6">
+                                <span class="bg-blue-50 text-blue-600 text-[9px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest border border-blue-100 shadow-sm">
+                                    <i class="fas fa-certificate mr-1"></i> Professional Class
+                                </span>
+                            </div>
+
                             <div>
-                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-colors duration-500">
+                                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-500 text-2xl group-hover:bg-orange-500 group-hover:text-white transition-all duration-500">
                                     <i class="fas fa-user-md"></i>
                                 </div>
-                                <h3 class="text-xl font-black text-[#434343] mb-3 transition-colors">6. Personal Branding for Experts</h3>
-                                <p class="text-gray-500 text-sm leading-relaxed">Program khusus bagi profesional (Dokter, Guru, Coach) untuk otoritas digital.</p>
+                                <h3 class="text-xl font-black text-[#434343] mb-3 transition-colors">Personal Branding for Experts</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed">Program khusus bagi profesional (Dokter, Guru, Coach) untuk membangun otoritas digital yang kredibel.</p>
                             </div>
                             
-                            <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
-                                <span>Authority Building</span>
-                                <div class="w-8 h-[1px] bg-orange-500"></div>
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-50">
+                                <div class="flex items-center gap-2 text-orange-500 text-[10px] font-bold uppercase tracking-[0.2em]">
+                                    <span>Lihat Kurikulum</span>
+                                    <div class="w-8 h-[1px] bg-orange-500"></div>
+                                </div>
+                                <div class="bg-gray-50 w-8 h-8 rounded-full flex items-center justify-center group-hover:rotate-180 transition-transform duration-700">
+                                    <i class="fas fa-redo-alt text-gray-300 text-[10px]"></i>
+                                </div>
                             </div>
                         </div>
 
                         <div class="absolute inset-0 h-full w-full rounded-[2.5rem] bg-white backface-hidden [transform:rotateY(180deg)] overflow-hidden flex flex-col border border-gray-100 shadow-xl">
                             <div class="bg-gray-100/80 px-6 py-6 border-b border-gray-100 flex justify-between items-center text-[#434343]">
                                 <div>
-                                    <h3 class="font-bold text-sm">Starter</h3>
-                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-black rounded-3xl">Most popular</span>
+                                    <h3 class="font-bold text-sm">Expert Plan</h3>
+                                    <span class="text-[8px] text-white font-bold tracking-wider px-1.5 py-0.5 bg-blue-600 rounded-3xl uppercase">Premium</span>
                                 </div>
                                 <div class="text-right">
                                     <span class="block text-sm text-green-700 line-through font-bold leading-none">IDR 1.5M</span>
-                                    <span class="block text-[10px] text-gray-500 font-medium mt-1">/ per orang</span>
+                                    <span class="block text-[10px] text-gray-500 font-medium mt-1">/ lifetime</span>
                                 </div>
                             </div>
+
                             <div class="p-6 flex flex-col flex-1">
-                                <p class="text-lg font-bold text-[#434343] mb-2">6. Personal Branding</p>
-                                <p class="text-[11px] text-green-600 font-bold mb-2">✅ Fokus: Trust & Authority</p>
-                                <ul class="text-xs text-gray-600 space-y-1">
-                                    <li>• Identifying Uniqueness</li>
-                                    <li>• Authority Content</li>
-                                    <li>• Visual Identity</li>
+                                <p class="text-lg font-bold text-[#434343] mb-2">Benefit Kelas</p>
+                                <p class="text-[11px] text-green-600 font-bold mb-2">✅ Fokus: Trust & Authority Building</p>
+                                <ul class="text-xs text-gray-600 space-y-2 mb-4">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-500">•</span> Identifying Your Unique Value
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-500">•</span> Authority Content Strategy
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-500">•</span> Professional Visual Identity
+                                    </li>
                                 </ul>
-                                <button class="mt-auto w-full bg-orange-500 text-white py-3 rounded-2xl text-[12px] font-bold hover:bg-orange-600 transition-all">
-                                    Ambil Diskon
+
+                                <button class="mt-auto group/btn relative w-full overflow-hidden bg-[#434343] text-white py-3.5 rounded-2xl text-[12px] font-bold transition-all hover:bg-orange-600 active:scale-95 shadow-lg shadow-gray-200">
+                                    <span class="relative z-10 flex items-center justify-center gap-2">
+                                        Daftar & Ambil Promo
+                                        <i class="fas fa-arrow-right text-[10px] group-hover/btn:translate-x-1 transition-transform"></i>
+                                    </span>
                                 </button>
                             </div>
                         </div>
                         
-
                     </div> 
                 </div>
-                    
-                
 
             </div>
         </div>
