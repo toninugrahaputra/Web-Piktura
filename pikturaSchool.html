@@ -79,13 +79,47 @@
 
     <section class="py-20 md:py-32 bg-[#1a1a1a] text-white">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="relative bg-[#434343] p-10 md:p-14 rounded-[3rem] mb-16 overflow-hidden shadow-2xl border border-white/5">
+            <div id="program-section" class="relative bg-[#434343] p-10 md:p-14 rounded-[3rem] mb-16 overflow-hidden shadow-2xl border border-white/5 text-white">
                 <div class="absolute top-0 right-0 p-10 opacity-10 text-7xl text-white">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
+
                 <div class="relative z-10 max-w-2xl">
                     <h2 class="text-3xl md:text-5xl font-black mb-6 tracking-tight">Program <span class="text-orange-400">Unggulan</span></h2>
                     <p class="text-gray-300 text-lg md:text-xl font-medium leading-relaxed">Pilihan kelas spesifik yang dirancang untuk mengakselerasi karir digital Anda melalui pendekatan <span class="text-white font-bold">praktik langsung.</span></p>
+                </div>
+
+                <div id="trial-popup" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:left-auto md:right-6 md:translate-x-0 z-[100] hidden scale-75 opacity-0 transition-all duration-500 ease-out w-[90%] max-w-[320px] md:w-auto">
+                    
+                    <div class="bg-white border border-orange-100 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-[2rem] p-6 relative overflow-hidden">
+                        <div class="absolute -bottom-10 -left-10 w-24 h-24 bg-orange-100 rounded-full blur-2xl opacity-40"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-200 rotate-3">
+                                    <i class="fas fa-play text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-black text-[#434343] text-sm leading-none">Trial Kelas!</h5>
+                                    <span class="text-[10px] text-orange-500 font-bold uppercase tracking-wider">Gratis Terbatas</span>
+                                </div>
+                            </div>
+                            
+                            <p class="text-gray-500 text-[12px] leading-relaxed mb-5">
+                                Penasaran gimana serunya belajar di <span class="font-bold text-[#434343]">Piktura School</span>? Coba trial videonya sekarang!
+                            </p>
+                            
+                            <a href="https://wa.me/6282234041064?text=Halo%20Piktura%2C%20saya%20ingin%20Coba%20Trial%20Kelas%20Gratis" target="_blank" 
+                            class="flex items-center justify-center gap-2 bg-[#434343] text-white py-3.5 rounded-xl text-xs font-bold hover:bg-orange-500 active:scale-95 transition-all shadow-lg">
+                                Coba Trial Gratis
+                                <i class="fas fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                        
+                        <button onclick="closeTrialPopup()" class="absolute top-3 right-3 text-gray-300 hover:text-gray-500 p-2 transition-colors">
+                            <i class="fas fa-times text-xs"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -735,7 +769,6 @@
             }
         });
 
-        // Burger Menu
         const burgerBtn = document.getElementById('burger-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         burgerBtn.addEventListener('click', () => {
@@ -753,6 +786,33 @@
                     mobileMenu.classList.add('hidden');
                     mobileMenu.classList.remove('flex');
                 }, 300);
+            }
+        });
+
+        function closeTrialPopup() {
+            const popup = document.getElementById('trial-popup');
+            popup.classList.add('scale-75', 'opacity-0');
+            setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 500);
+        }
+
+        window.addEventListener('scroll', function() {
+            const programSection = document.getElementById('program-section');
+            const trialPopup = document.getElementById('trial-popup');
+            
+            if (programSection) {
+                const sectionPosition = programSection.getBoundingClientRect();
+                
+                if (sectionPosition.top < window.innerHeight && sectionPosition.bottom >= 0) {
+                    if (trialPopup.classList.contains('hidden')) {
+                        trialPopup.classList.remove('hidden');
+                        setTimeout(() => {
+                            trialPopup.classList.remove('scale-75', 'opacity-0');
+                            trialPopup.classList.add('scale-100', 'opacity-100');
+                        }, 100);
+                    }
+                }
             }
         });
     </script>
